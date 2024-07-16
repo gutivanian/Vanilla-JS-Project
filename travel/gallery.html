@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>TripBoss</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- font awesome cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- fonts -->
+        <link rel = "stylesheet" href = "font/fonts.css">
+        <!-- normalize css -->
+        <link rel = "stylesheet" href = "css/normalize.css">
+        <!-- custom css -->
+        <link rel = "stylesheet" href = "css/utility.css">
+        <link rel = "stylesheet" href = "css/style.css">
+        <link rel = "stylesheet" href = "css/responsive.css">
+        <!-- boxicons -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <!-- navbar -->
+        <nav class="navbar">
+            <div class="container flex">
+                <a href="index.html" class="site-brand">
+                    <span>Focalor</span> Trip
+                </a>
+                <button id="navbar-show-btn" type="button" class="flex">
+                    <i class='bx bx-menu'></i>
+                    </button>
+                <!-- Navbar yang hilang (side menu) -->
+                <div id="navbar-collapse">
+                    <!-- Close -->
+                    <button type="button" id="navbar-close-btn" class = "flex">
+                        <i class='bx bx-x-circle'></i>
+                    </button>
+                    <!-- ul -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                Gallery
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                Blog
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                About
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- End of navbar -->
+
+        <!-- Header -->
+        <header class="flex header-sm">
+            <!-- Header container -->
+            <div class="container">
+                <!-- Title -->
+                <div class="header-title">
+                    <h1>Gallery</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, quisquam nostrum quibusdam rem, vitae veniam, repellat voluptatem hic adipisci rerum nobis error laudantium dolorum mollitia eveniet in veritatis quia fugiat!</p>
+                </div>
+            </div>
+        </header>
+        <!-- Header -->
+
+        <!-- Gallery Section -->
+        <div id="gallery" class="py-4">
+            <div class="container">
+                <div class="gallery-row">
+                    <div class="gallery-item shadow">
+                        <img src="./images/gallery-1.jpg" alt="gallery image">
+                        <span class="zoom-icon">
+                            <i class='bx bx-zoom-in'></i>
+                        </span>
+                    </div>
+                    <div class="gallery-item shadow">
+                        <img src="./images/gallery-2.jpg" alt="gallery image">
+                        <span class="zoom-icon">
+                            <i class='bx bx-zoom-in'></i>
+                        </span>
+                    </div>
+                    <div class="gallery-item shadow">
+                        <img src="./images/gallery-3.jpg" alt="gallery image">
+                        <span class="zoom-icon">
+                            <i class='bx bx-zoom-in'></i>
+                        </span>
+                    </div>
+                    <div class="gallery-item shadow">
+                        <img src="./images/gallery-4.jpg" alt="gallery image">
+                        <span class="zoom-icon">
+                            <i class='bx bx-zoom-in'></i>
+                        </span>
+                    </div>
+                    <div class="gallery-item shadow">
+                        <img src="./images/gallery-5.jpg" alt="gallery image">
+                        <span class="zoom-icon">
+                            <i class='bx bx-zoom-in'></i>
+                        </span>
+                    </div>
+                    <div class="gallery-item shadow">
+                        <img src="./images/gallery-6.jpg" alt="gallery image">
+                        <span class="zoom-icon">
+                            <i class='bx bx-zoom-in'></i>
+                        </span>
+                    </div>
+                    <div class="gallery-item shadow">
+                        <img src="./images/gallery-7.jpg" alt="gallery image">
+                        <span class="zoom-icon">
+                            <i class='bx bx-zoom-in'></i>
+                        </span>
+                    </div>
+                    <div class="gallery-item shadow">
+                        <img src="./images/gallery-8.jpg" alt="gallery image">
+                        <span class="zoom-icon">
+                            <i class='bx bx-zoom-in'></i>
+                        </span>
+                    </div>
+                    <div class="gallery-item shadow">
+                        <img src="./images/gallery-9.jpg" alt="gallery image">
+                        <span class="zoom-icon">
+                            <i class='bx bx-zoom-in'></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Gallery Section -->
+
+        <!-- img modal -->
+            <div id="img-modal-box">
+                <div id="img-modal">
+                    <button type="button" id="modal-close-btn" class="flex">
+                        <i class='bx bx-x'></i>
+                    </button>
+                    <button type="button" id="prev-btn" class="flex">
+                        <i class='bx bx-chevron-left'></i>
+                    </button>
+                    <button type="button" id="next-btn" class="flex">
+                        <i class='bx bx-chevron-right'></i>
+                    </button>
+                    <img src="./images/gallery-1.jpg" alt="">
+                </div>
+            </div>
+        <!-- img modal -->
+
+        <!-- popular places -->
+        <div id="popular" class="py-4">
+            <div class="title-wrap">
+                <span class="sm-title">
+                    know about some cool destination
+                </span>
+                <h2 class="lg-title">Popular Places</h2>
+            </div>
+            <div class="popular-row">
+                <div class="popular-item shadow">
+                    <img src="./images/popular-1.jpg" alt="">
+                    <div>
+                        <span>
+                            Eiffel Tower, Paris
+                        </span>
+                        <ul class="rating flex">
+                            <li><i class='bx bxs-star'></i></li>
+                            <li><i class='bx bxs-star'></i></li>
+                            <li><i class='bx bxs-star'></i></li>
+                            <li><i class='bx bxs-star'></i></li>
+                            <li><i class='bx bxs-star-half'></i></li>
+                            <li>&nbsp;400 reviews</li>
+
+                        </ul>
+                        <p class="text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos consequuntur eum inventore incidunt autem officiis aspernatur? Aliquam facere cupiditate earum atque tempora nesciunt similique accusantium fugiat dolore. Fugiat, omnis unde!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="popular-item shadow">
+                    <img src="./images/popular-2.jpg" alt="">
+                    <div>
+                        <span>
+                            Macchu Picchu, Peru
+                        </span>
+                        <ul class="rating flex">
+                            <li><i class='bx bxs-star'></i></li>
+                            <li><i class='bx bxs-star'></i></li>
+                            <li><i class='bx bxs-star'></i></li>
+                            <li><i class='bx bxs-star'></i></li>
+                            <li><i class='bx bxs-star-half'></i></li>
+                            <li>&nbsp;400 reviews</li>
+
+                        </ul>
+                        <p class="text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos consequuntur eum inventore incidunt autem officiis aspernatur? Aliquam facere cupiditate earum atque tempora nesciunt similique accusantium fugiat dolore. Fugiat, omnis unde!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="popular-item shadow">
+                    <img src="./images/popular-3.jpg" alt="">
+                    <div>
+                        <span>
+                            Acropolis, Athens
+                        </span>
+                        <ul class="rating flex">
+                            <li><i class='bx bxs-star'></i></li>
+                            <li><i class='bx bxs-star'></i></li>
+                            <li><i class='bx bxs-star'></i></li>
+                            <li><i class='bx bxs-star'></i></li>
+                            <li><i class='bx bxs-star-half'></i></li>
+                            <li>&nbsp;400 reviews</li>
+
+                        </ul>
+                        <p class="text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos consequuntur eum inventore incidunt autem officiis aspernatur? Aliquam facere cupiditate earum atque tempora nesciunt similique accusantium fugiat dolore. Fugiat, omnis unde!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="popular-item shadow">
+                    <img src="./images/popular-4.jpg" alt="">
+                    <div>
+                        <span>
+                            Bali, Indonesia
+                        </span>
+                        <ul class="rating flex">
+                            <li><i class='bx bxs-star'></i></li>
+                            <li><i class='bx bxs-star'></i></li>
+                            <li><i class='bx bxs-star'></i></li>
+                            <li><i class='bx bxs-star'></i></li>
+                            <li><i class='bx bxs-star-half'></i></li>
+                            <li>&nbsp;400 reviews</li>
+
+                        </ul>
+                        <p class="text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos consequuntur eum inventore incidunt autem officiis aspernatur? Aliquam facere cupiditate earum atque tempora nesciunt similique accusantium fugiat dolore. Fugiat, omnis unde!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="popular-item shadow">
+                    <img src="./images/popular-5.jpg" alt="">
+                    <div>
+                        <span>
+                            Dubai, United Arab Emirates
+                        </span>
+                        <ul class="rating flex">
+                            <li><i class='bx bxs-star'></i></li>
+                            <li><i class='bx bxs-star'></i></li>
+                            <li><i class='bx bxs-star'></i></li>
+                            <li><i class='bx bxs-star'></i></li>
+                            <li><i class='bx bxs-star-half'></i></li>
+                            <li>&nbsp;400 reviews</li>
+
+                        </ul>
+                        <p class="text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos consequuntur eum inventore incidunt autem officiis aspernatur? Aliquam facere cupiditate earum atque tempora nesciunt similique accusantium fugiat dolore. Fugiat, omnis unde!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="popular-item shadow">
+                    <img src="./images/popular-6.jpg" alt="">
+                    <div>
+                        <span>
+                            Bhutan
+                        </span>
+                        <ul class="rating flex">
+                            <li><i class='bx bxs-star'></i></li>
+                            <li><i class='bx bxs-star'></i></li>
+                            <li><i class='bx bxs-star'></i></li>
+                            <li><i class='bx bxs-star'></i></li>
+                            <li><i class='bx bxs-star-half'></i></li>
+                            <li>&nbsp;400 reviews</li>
+
+                        </ul>
+                        <p class="text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos consequuntur eum inventore incidunt autem officiis aspernatur? Aliquam facere cupiditate earum atque tempora nesciunt similique accusantium fugiat dolore. Fugiat, omnis unde!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="popular-item shadow">
+                    <img src="./images/popular-7.jpg" alt="">
+                    <div>
+                        <span>
+                            Havana, Cuba
+                        </span>
+                        <ul class="rating flex">
+                            <li><i class='bx bxs-star'></i></li>
+                            <li><i class='bx bxs-star'></i></li>
+                            <li><i class='bx bxs-star'></i></li>
+                            <li><i class='bx bxs-star'></i></li>
+                            <li><i class='bx bxs-star-half'></i></li>
+                            <li>&nbsp;400 reviews</li>
+
+                        </ul>
+                        <p class="text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos consequuntur eum inventore incidunt autem officiis aspernatur? Aliquam facere cupiditate earum atque tempora nesciunt similique accusantium fugiat dolore. Fugiat, omnis unde!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="popular-item shadow">
+                    <img src="./images/popular-8.jpg" alt="">
+                    <div>
+                        <span>
+                            Moskva, Russia
+                        </span>
+                        <ul class="rating flex">
+                            <li><i class='bx bxs-star'></i></li>
+                            <li><i class='bx bxs-star'></i></li>
+                            <li><i class='bx bxs-star'></i></li>
+                            <li><i class='bx bxs-star'></i></li>
+                            <li><i class='bx bxs-star-half'></i></li>
+                            <li>&nbsp;400 reviews</li>
+
+                        </ul>
+                        <p class="text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos consequuntur eum inventore incidunt autem officiis aspernatur? Aliquam facere cupiditate earum atque tempora nesciunt similique accusantium fugiat dolore. Fugiat, omnis unde!
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- popular places -->
+
+                <!-- footer -->
+                <footer class="py-4">
+                    <div class="container footer-row">
+                        <div class="footer-item">
+                            <a href="./index.html" class="site-brand">
+                                <span>Focalor</span> Trip
+                            </a>
+                            <p class="text">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos reiciendis perspiciatis corrupti soluta perferendis debitis totam itaque minima culpa provident, suscipit, veritatis earum beatae nesciunt ex. Dolore distinctio dolores molestiae.
+                            </p>
+                        </div>
+                        <div class="footer-item">
+                            <h2>Follow us on:</h2>
+                            <ul class="social-links">
+                                <li>
+                                    <a href="#">
+                                        <i class='bx bxl-facebook'></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class='bx bxl-twitter'></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class='bx bxl-instagram'></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class='bx bxl-google-plus'></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+        
+                        <div class="footer-item">
+                            <h2>Popular Places:</h2>
+                            <ul>
+                                <li><a href="#">Thailand</a></li>
+                                <li><a href="#">Australia</a></li>
+                                <li><a href="#">Maldives</a></li>
+                                <li><a href="#">Switzerland</a></li>
+                                <li><a href="#">Germany</a></li>
+                            </ul>
+                        </div>
+        
+                        <div class="subscribe-form footer-item">
+                            <h2>Subscribe for Newsletter:</h2>
+                            <form class="flex">
+                                <input type="email"  class="form-control"
+                                placeholder="Enter Email">
+                                <input type="submit" value="Subscribe" class="btn">
+                            </form>
+                        </div>
+                    </div>
+                </footer>
+                <!-- footer -->
+
+                <script src="./js/script.js"></script>
+
+                <script>
+                    let allGalleryItem = document.querySelectorAll(".gallery-item")
+let imgModalDiv = document.getElementById("img-modal-box")
+let modalCloseBtn = document.getElementById("modal-close-btn")
+let nextButton = document.getElementById("next-btn")
+let prevButton = document.getElementById("prev-btn")
+let imgIndex = 0
+
+for (let galleryItem of allGalleryItem) {
+    let realImgSrc = ""
+    galleryItem.addEventListener("click",function(e) {
+        imgModalDiv.style.display = "block"
+        // let imgSrc = galleryItem.querySelector("img").src
+        let clickedImage = e.target;
+        let imgElement = clickedImage.querySelector("img");
+        if (imgElement){
+            let imgSrc = imgElement.src
+            realImgSrc = imgSrc
+            // console.log(realImgSrc);
+            let imgModal = document.querySelector("#img-modal img");
+            imgModal.src = realImgSrc
+        }
+        let urlPart = realImgSrc.split("-")
+        let linkPart = urlPart[0]
+        let imgPart = urlPart[1]
+        let indexPart = parseInt(imgPart.split(".")[0])
+        let extPart = imgPart.split(".")[1]
+        // console.log(linkPart,indexPart,extPart);
+        imgIndex = indexPart
+    })
+}
+
+modalCloseBtn.addEventListener("click",function() {
+    imgModalDiv.style.display = "none"
+})
+
+nextButton.addEventListener("click",function(){
+    let imgModal = document.querySelector("#img-modal img");
+    if(imgIndex !=9){
+        imgIndex++
+        imgModal.src = "./images/gallery-"+imgIndex+".jpg"
+    } else{
+        imgModal.src = "./images/gallery-1.jpg"
+        // console.log(imgIndex);
+        imgIndex = 1
+    }
+})
+
+prevButton.addEventListener("click",function(){
+    let imgModal = document.querySelector("#img-modal img");
+    if(imgIndex !=1){
+        imgIndex--
+        imgModal.src = "./images/gallery-"+imgIndex+".jpg"
+    } else{
+        imgModal.src = "./images/gallery-9.jpg"
+        // console.log(imgIndex);
+        imgIndex = 9
+    }
+})
+
+                </script>
+    </body>
+</html>

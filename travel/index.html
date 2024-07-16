@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>TripBoss</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- font awesome cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- fonts -->
+        <link rel = "stylesheet" href = "font/fonts.css">
+        <!-- normalize css -->
+        <link rel = "stylesheet" href = "css/normalize.css">
+        <!-- custom css -->
+        <link rel = "stylesheet" href = "css/utility.css">
+        <link rel = "stylesheet" href = "css/style.css">
+        <link rel = "stylesheet" href = "css/responsive.css">
+        <!-- boxicons -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <!-- navbar -->
+        <nav class="navbar">
+            <div class="container flex">
+                <a href="index.html" class="site-brand">
+                    <span>Focalor</span> Trip
+                </a>
+                <button id="navbar-show-btn" type="button" class="flex">
+                    <i class='bx bx-menu'></i>
+                </button>
+                <!-- Navbar yang hilang (side menu) -->
+                <div id="navbar-collapse">
+                    <!-- Close -->
+                    <button type="button" id="navbar-close-btn" class = "flex">
+                        <i class='bx bx-x-circle'></i>
+                    </button>
+                    <!-- ul -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                Gallery
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                Blog
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                About
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- End of navbar -->
+
+        <!-- Header -->
+        <header class="flex">
+            <!-- Header container -->
+            <div class="container">
+                <!-- Title -->
+                <div class="header-title">
+                    <h1>Leave Your Footprints</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, quisquam nostrum quibusdam rem, vitae veniam, repellat voluptatem hic adipisci rerum nobis error laudantium dolorum mollitia eveniet in veritatis quia fugiat!</p>
+                </div>
+                <!-- Travel Form -->
+                <div class="header-form">
+                    <h2>Choose your travel location:</h2>
+                    <form class="flex">
+                        <input type="text" class="form-control"
+                        placeholder="Destination name">
+                        <input type="date"  class="form-control"
+                        placeholder="Date">
+                        <input type="number" class="form-control"
+                        placeholder="Price (IDR)">
+                        <input type="submit" value="Search" class="btn">
+                    </form>
+                </div>  
+            </div>
+        </header>
+        <!-- end of header -->
+
+        <!-- featured section -->
+        <section id="featured" class="py-4">
+            <div class="container">
+                <div class="title-wrap">
+                    <span class="sm-title">
+                        Know about some places before your travel
+                    </span>
+                    <h2 class="lg-title">
+                        featured places
+                    </h2>
+                    <div class="featured-row">
+                        <div class="featured-item my-2 shadow">
+                            <img src="./images/featured-reo-de-janeiro-brazil.jpg" alt="featured place">
+                            <div class="featured-item-content">
+                                <span>
+                                    <i class='bx bx-map-alt'></i>
+                                    Rio De Janeiro, Brazil
+                                </span>
+                                <div>
+                                    <p class="text">
+                                        Lorem ipsum consectetur adipisicing elit. Voluptatibus sunt beatae porro voluptatum sapiente blanditiis, vitae hic vero quae odio cum eaque numquam ea dicta. Repellat ipsum autem voluptate amet?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="featured-item my-2 shadow">
+                            <img src="./images/featured-berlin-germany.jpg" alt="featured place">
+                            <div class="featured-item-content">
+                                <span>
+                                    <i class='bx bx-map-alt'></i>
+                                    Berlin, Germany
+                                </span>
+                                <div>
+                                    <p class="text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus sunt beatae porro voluptatum sapiente blanditiis, vitae hic vero quae odio cum eaque numquam ea dicta. Repellat ipsum autem voluptate amet?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="featured-item my-2 shadow">
+                            <img src="./images/featured-fuvahmulah-maldives.jpg" alt="featured place">
+                            <div class="featured-item-content">
+                                <span>
+                                    <i class='bx bx-map-alt'></i>
+                                    Fuvahmulah, Maldives
+                                </span>
+                                <div>
+                                    <p class="text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus sunt beatae porro voluptatum sapiente blanditiis, vitae hic vero quae odio cum eaque numquam ea dicta. Repellat ipsum autem voluptate amet?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="featured-item my-2 shadow">
+                            <img src="./images/featured-khwaeng-wat-arun-thailand.jpg" alt="featured place">
+                            <div class="featured-item-content">
+                                <span>
+                                    <i class='bx bx-map-alt'></i>
+                                    Khwaeng Wat Arun, Thailand
+                                </span>
+                                <div>
+                                    <p class="text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus sunt beatae porro voluptatum sapiente blanditiis, vitae hic vero quae odio cum eaque numquam ea dicta. Repellat ipsum autem voluptate amet?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="featured-item my-2 shadow">
+                            <img src="./images/featured-north-bondi-australia.jpg" alt="featured place">
+                            <div class="featured-item-content">
+                                <span>
+                                    <i class='bx bx-map-alt'></i>
+                                    North Bondi, Australia
+                                </span>
+                                <div>
+                                    <p class="text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus sunt beatae porro voluptatum sapiente blanditiis, vitae hic vero quae odio cum eaque numquam ea dicta. Repellat ipsum autem voluptate amet?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="featured-item my-2 shadow">
+                            <img src="./images/featured-rome-italy.jpg" alt="featured place">
+                            <div class="featured-item-content">
+                                <span>
+                                    <i class='bx bx-map-alt'></i>
+                                    Rome, Italy
+                                </span>
+                                <div>
+                                    <p class="text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus sunt beatae porro voluptatum sapiente blanditiis, vitae hic vero quae odio cum eaque numquam ea dicta. Repellat ipsum autem voluptate amet?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- featured row -->
+                </div>
+            </div>
+        </section>
+        <!-- end of featured section -->
+
+        <!-- services section -->
+        <section id="services" class="py-4">
+            <!-- container -->
+            <div class="container">
+                <!-- title wrap -->
+                <div class="title-wrap">
+                    <span class="sm-title">
+                        know about services that we offer
+                    </span>
+                    <h2 class="lg-title">
+                        Our services
+                    </h2>
+                    <!-- service row -->
+                    <div class="services-row">
+                        <!-- service item -->
+                        <div class="services-item">
+                            <span class="services-icon">
+                                <i class='bx bxs-hotel'></i>
+                                <h3>
+                                    Luxurious Hotel
+                                </h3>
+                                <p class="text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus itaque a recusandae iste, ipsam sequi libero, repellendus non vero in nulla illum reprehenderit, exercitationem adipisci? Aliquid dolore cumque facere veniam?
+                                </p>
+                                <a href="#"
+                                class="btn">Read More</a>
+                            </span> 
+                        </div>
+                        <!-- service item -->
+                        <div class="services-item">
+                            <span class="services-icon">
+                                <i class='bx bx-map-alt'></i>
+                                <h3>
+                                    Tour Guide
+                                </h3>
+                                <p class="text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus itaque a recusandae iste, ipsam sequi libero, repellendus non vero in nulla illum reprehenderit, exercitationem adipisci? Aliquid dolore cumque facere veniam?
+                                </p>
+                                <a href="#"
+                                class="btn">Read More</a>
+                            </span> 
+                        </div>
+                        <!-- service item -->
+                        <div class="services-item">
+                            <span class="services-icon">
+                                <i class='bx bx-wallet'></i>
+                                <h3>
+                                    Suitable Price
+                                </h3>
+                                <p class="text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus itaque a recusandae iwste, ipsam sequi libero, repellendus non vero in nulla illum reprehenderit, exercitationem adipisci? Aliquid dolore cumque facere veniam?
+                                </p>
+                                <a href="#"
+                                class="btn">Read More</a>
+                            </span> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of services section -->
+
+        <!-- Testimonials -->
+        <section id="testimonials" class="py-4">
+            <!-- container -->
+            <div class="container">
+                <!-- title-wrap -->
+                <div class="title-wrap">
+                    <span class="sm-title">
+                        What our clients say about us?
+                    </span>
+                    <h2 class="lg-title">
+                        Testimonials
+                    </h2>
+                </div>
+                <!-- title-wrap -->
+                <!-- test-row -->
+                <div class="test-row">
+                    <!-- test-item -->
+                    <div class="test-item">
+                        <p class="text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis iste porro repellat harum eius minus eum neque nemo maxime reiciendis, sunt, provident illo distinctio. Necessitatibus nisi accusamus dolorem facere dicta!
+                        </p>
+                        <!-- test-item-info -->
+                        <div class="test-item-info">
+                            <img src="./images/test-1.jpg" alt="testimonial">
+                            <div>
+                                <h3>Stare Fondofne</h3>
+                                <p class="text">Trip to Brazil</p>
+                            </div>
+                        </div>
+                        <!-- test-item-info -->
+                    </div>
+                    <!-- test-item -->
+                    <!-- test-item -->
+                    <div class="test-item">
+                        <p class="text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis iste porro repellat harum eius minus eum neque nemo maxime reiciendis, sunt, provident illo distinctio. Necessitatibus nisi accusamus dolorem facere dicta!
+                        </p>
+                        <!-- test-item-info -->
+                        <div class="test-item-info">
+                            <img src="./images/test-2.jpg" alt="testimonial">
+                            <div>
+                                <h3>Vega Alvarez</h3>
+                                <p class="text">Trip to Italy</p>
+                            </div>
+                        </div>  
+                        <!-- test-item-info -->
+                    </div>
+                    <!-- test-item -->
+                    <!-- test-item -->
+                    <div class="test-item">
+                        <p class="text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis iste porro repellat harum eius minus eum neque nemo maxime reiciendis, sunt, provident illo distinctio. Necessitatibus nisi accusamus dolorem facere dicta!
+                        </p>
+                        <!-- test-item-info -->
+                        <div class="test-item-info">
+                            <img src="./images/test-3.jpg" alt="testimonial">
+                            <div>
+                                <h3>Lucy Rachelia</h3>
+                                <p class="text">Trip to Maldives</p>
+                            </div>
+                        </div>
+                        <!-- test-item-info -->
+                    </div>
+                    <!-- test-item -->
+                </div>
+                <!-- test-row -->
+            </div>
+            <!-- container -->
+        </section>
+        <!-- end of testimonial -->
+
+        <!-- Video section -->
+        <section id="video">
+            <!-- video wrapper -->
+            <div class="video-wrapper flex">
+                <video src="./videos/video-section.mp4" loop
+                type: "video/mp4"></video>
+                <button type="button" id="play-btn">
+                    <i class='bx bx-play'></i>
+                </button>
+            </div>
+            <!-- video wrapper -->
+        </section>
+        <!-- end of video section -->
+
+        <!-- footer -->
+        <footer class="py-4">
+            <div class="container footer-row">
+                <div class="footer-item">
+                    <a href="./index.html" class="site-brand">
+                        <span>Focalor</span> Trip
+                    </a>
+                    <p class="text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos reiciendis perspiciatis corrupti soluta perferendis debitis totam itaque minima culpa provident, suscipit, veritatis earum beatae nesciunt ex. Dolore distinctio dolores molestiae.
+                    </p>
+                </div>
+                <div class="footer-item">
+                    <h2>Follow us on:</h2>
+                    <ul class="social-links">
+                        <li>
+                            <a href="#">
+                                <i class='bx bxl-facebook'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class='bx bxl-twitter'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class='bx bxl-instagram'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class='bx bxl-google-plus'></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-item">
+                    <h2>Popular Places:</h2>
+                    <ul>
+                        <li><a href="#">Thailand</a></li>
+                        <li><a href="#">Australia</a></li>
+                        <li><a href="#">Maldives</a></li>
+                        <li><a href="#">Switzerland</a></li>
+                        <li><a href="#">Germany</a></li>
+                    </ul>
+                </div>
+
+                <div class="subscribe-form footer-item">
+                    <h2>Subscribe for Newsletter:</h2>
+                    <form class="flex">
+                        <input type="email"  class="form-control"
+                        placeholder="Enter Email">
+                        <input type="submit" value="Subscribe" class="btn">
+                    </form>
+                </div>
+            </div>
+        </footer>
+        <!-- footer -->
+        <!-- js -->
+        <script src = "js/script.js"></script>
+        <script>
+            // Video Play button
+let video = document.querySelector(".video-wrapper video")
+document.getElementById("play-btn").addEventListener("click",function() {
+    if(video.paused){
+        video.play();
+        
+    } else {
+        video.pause()
+    }
+})
+        </script>
+    </body>
+</html>

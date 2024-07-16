@@ -1,0 +1,129 @@
+div{
+    border: .01px black solid;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif,;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2f363e;
+}
+
+#time{
+    display: flex;
+    gap: 40px   ;
+    color: #fff;
+}
+
+#time .circle{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#time .circle svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform: rotate(270deg);
+}
+
+#time .circle svg circle {
+    width: 100%;
+    height: 100%;
+    fill: transparent !important;
+    stroke: #191919;
+    stroke-width: 4px;
+    transform: translate(5px,5px);
+}
+
+#time .ch svg circle:nth-child(2){
+    stroke: #ff2972;
+    stroke-dasharray: 440;
+}
+
+#time .cm svg circle:nth-child(2){
+    stroke: #fee800;
+    stroke-dasharray: 440;
+}
+
+#time .cs svg circle:nth-child(2){
+    stroke: #04fc43;
+    stroke-dasharray: 440;
+}
+
+#time div{
+    position: absolute;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#time div span{
+    position: absolute;
+    transform: translate(-50%,0px);
+    font-size: 0.5rem;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+
+#time .ap{
+    position: absolute;
+    font-size: 1rem;
+    transform: translate(-20px);
+}
+
+.dots{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+}
+
+/* .h-dot::before{
+    content: "";
+    position: absolute;
+    top: -3px;
+    width: 15px;
+    background: #ff2972 ;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #ff2972, 0 0 60px #ff2972;
+} */
+
+/* .m-dot::before{
+    content: "";
+    position: absolute;
+    top: -3px;
+    width: 15px;
+    background: #fee800 ;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #fee800, 0 0 60px #fee800;
+} */
+
+.dots::before{
+    content: "";
+    position: absolute;
+    top: -3px;
+    width: 15px;
+    background: #04fc43 ;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #04fc43, 0 0 60px #04fc43;
+}
+
